@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products | Aroma Bliss</title>
+    <meta
+      name="description"
+      content="Explore our full range of handcrafted soy candles at Aroma Bliss."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Quicksand:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <h1 class="logo">Aroma Bliss</h1>
+        <nav class="nav">
+          <button class="mobile-menu-btn" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li>
+              <a href="products.html" class="nav-link active">Products</a>
+            </li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="cart-icon" aria-label="View cart">
+          <span class="cart-count">0</span>
+          🛒
+        </div>
+      </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h2>Our Products</h2>
+        <p>Discover our full collection of handcrafted candles</p>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="section products">
+      <div class="container">
+        <!-- Filter Controls -->
+        <div class="filter-controls">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="lavender">Lavender</button>
+          <button class="filter-btn" data-filter="rose">Rose</button>
+          <button class="filter-btn" data-filter="eucalyptus">
+            Eucalyptus
+          </button>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="product-grid">
+          <!-- Products will be dynamically inserted here by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h3>Aroma Bliss</h3>
+            <p>Handcrafted in Kenya with care</p>
+          </div>
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-newsletter">
+            <h4>Stay Updated</h4>
+            <form id="newsletter-form">
+              <input type="email" placeholder="Your email address" required />
+              <button type="submit" class="btn btn-small">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2025 Aroma Bliss. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar">
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button class="close-cart">&times;</button>
+      </div>
+      <div class="cart-items">
+        <!-- Cart items will be dynamically inserted here -->
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <p>Total: <span id="cart-total">KSh 0</span></p>
+        </div>
+        <button class="btn btn-primary checkout-btn">Checkout</button>
+        <button class="btn btn-secondary clear-cart-btn">Clear Cart</button>
+      </div>
+    </div>
+
+    <!-- Overlay for Cart and Lightbox -->
+    <div class="overlay"></div>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox">
+      <button class="close-lightbox">&times;</button>
+      <img src="" alt="Product image" id="lightbox-image" />
+      <div class="lightbox-details">
+        <h3 id="lightbox-title"></h3>
+        <p id="lightbox-description"></p>
+        <p class="lightbox-price"></p>
+        <button class="btn btn-primary add-to-cart-lightbox" data-id="">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+
+    <!-- Success Toast -->
+    <div class="toast" id="toast">
+      <div class="toast-content"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

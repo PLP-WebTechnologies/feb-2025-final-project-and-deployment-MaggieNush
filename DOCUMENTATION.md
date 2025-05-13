@@ -51,6 +51,9 @@ This ethos is reflected in the website’s clean layout, soft animations, and us
 aroma-bliss/
 │
 ├── index.html          # Main HTML page
+├── products.html       # Products HTML page
+├── contact.html        # Contact HTML page
+├── about.html          # About HTML page
 ├── style.css           # Custom styles
 ├── script.js           # JavaScript for interactivity
 └── DOCUMENTATION.md    # Project documentation

@@ -28,11 +28,10 @@
             <span></span>
           </button>
           <ul class="nav-list">
-            <li><a href="#home" class="nav-link">Home</a></li>
-            <li><a href="#best-sellers" class="nav-link">Best Sellers</a></li>
-            <li><a href="#products" class="nav-link">Products</a></li>
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="products.html" class="nav-link">Products</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
           </ul>
         </nav>
         <div class="cart-icon" aria-label="View cart">
@@ -51,7 +50,7 @@
             Discover handcrafted soy candles infused with love, comfort, and the
             essence of Kenya.
           </p>
-          <a href="#products" class="btn btn-primary fade-in delay-2"
+          <a href="products.html" class="btn btn-primary fade-in delay-2"
             >Explore Our Products</a
           >
         </div>
@@ -87,8 +86,11 @@
                 <button
                   class="btn btn-primary add-to-cart"
                   data-id="lavender-bliss"
+                  data-name="Lavender Bliss Candle"
+                  data-price="1200"
+                  data-image="https://i.pinimg.com/736x/06/d7/89/06d789cc47c3807dbd36c962d9849194.jpg"
                 >
-                  Add Cart
+                  Add to Cart
                 </button>
                 <button
                   class="btn btn-secondary view-product"
@@ -120,8 +122,11 @@
                 <button
                   class="btn btn-primary add-to-cart"
                   data-id="rose-serenity"
+                  data-name="Rose Serenity Candle"
+                  data-price="1500"
+                  data-image="https://i.pinimg.com/736x/1c/d2/8c/1cd28cda6009fd069700b8280bfd60e3.jpg"
                 >
-                  Add Cart
+                  Add to Cart
                 </button>
                 <button
                   class="btn btn-secondary view-product"
@@ -153,8 +158,11 @@
                 <button
                   class="btn btn-primary add-to-cart"
                   data-id="eucalyptus-calm"
+                  data-name="Eucalyptus Calm Candle"
+                  data-price="1000"
+                  data-image="https://i.pinimg.com/736x/7b/05/7f/7b057f77ac45c45bda959d1a349927f0.jpg"
                 >
-                  Add Cart
+                  Add to Cart
                 </button>
                 <button
                   class="btn btn-secondary view-product"
@@ -163,152 +171,6 @@
                   View Details
                 </button>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Products Section -->
-    <section id="products" class="section products">
-      <div class="container">
-        <h2 class="section-title">Our Products</h2>
-
-        <!-- Filter Controls -->
-        <div class="filter-controls">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="lavender">Lavender</button>
-          <button class="filter-btn" data-filter="rose">Rose</button>
-          <button class="filter-btn" data-filter="eucalyptus">
-            Eucalyptus
-          </button>
-        </div>
-
-        <!-- Product Grid -->
-        <div class="product-grid">
-          <!-- Products will be dynamically inserted here by JavaScript -->
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section about">
-      <div class="container">
-        <div class="about-content">
-          <div class="about-text">
-            <h2 class="section-title">About Us</h2>
-            <p>
-              Aroma Bliss was founded in Nairobi with a simple mission — to
-              bring a warm, fragrant experience into every Kenyan home. We
-              believe in sustainability, beauty, and calm moments.
-            </p>
-
-            <h3>Our Values</h3>
-            <ul class="values-list">
-              <li>
-                <span>Sustainability</span> - Using 100% natural soy wax and
-                eco-friendly materials
-              </li>
-              <li>
-                <span>Craftsmanship</span> - Each candle handcrafted with
-                attention to detail
-              </li>
-              <li>
-                <span>Community</span> - Supporting local artisans and
-                businesses
-              </li>
-            </ul>
-          </div>
-          <div class="about-image">
-            <img
-              src="https://i.pinimg.com/736x/11/45/15/1145158b2d78ba941f502a3a89f087a4.jpg"
-              alt="Candle making process"
-              class="rounded-image"
-            />
-          </div>
-        </div>
-
-        <div class="team">
-          <h3>Meet Our Team</h3>
-          <div class="team-members">
-            <div class="team-member">
-              <div class="team-member-image">
-                <img
-                  src="https://img.freepik.com/free-photo/african-american-business-woman_1303-10877.jpg?uid=R26512534&semt=ais_hybrid&w=740"
-                  alt="Wanjiru Mwangi"
-                />
-              </div>
-              <h4>Wanjiru Mwangi</h4>
-              <p>Founder & Creative Lead</p>
-            </div>
-            <div class="team-member">
-              <div class="team-member-image">
-                <img
-                  src="https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072214.jpg?uid=R26512534&semt=ais_hybrid&w=740"
-                  alt="Brian Otieno"
-                />
-              </div>
-              <h4>Brian Otieno</h4>
-              <p>Operations Manager</p>
-            </div>
-            <div class="team-member">
-              <div class="team-member-image">
-                <img
-                  src="https://img.freepik.com/free-photo/medium-shot-girl-posing-skate_23-2148499566.jpg?uid=R26512534&semt=ais_hybrid&w=740"
-                  alt="Nafula Achieng"
-                />
-              </div>
-              <h4>Nafula Achieng</h4>
-              <p>Lead Scent Designer</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section contact">
-      <div class="container">
-        <h2 class="section-title">Contact Us</h2>
-        <p class="contact-intro">
-          We'd love to hear from you! Whether it's a custom scent request or a
-          wholesale inquiry, our team is here to help.
-        </p>
-
-        <div class="contact-container">
-          <form id="contact-form" class="contact-form">
-            <div class="form-group">
-              <label for="name">Your Name</label>
-              <input type="text" id="name" name="name" required />
-            </div>
-            <div class="form-group">
-              <label for="email">Your Email</label>
-              <input type="email" id="email" name="email" required />
-            </div>
-            <div class="form-group">
-              <label for="message">Your Message</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="5"
-                required
-              ></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send Message</button>
-          </form>
-
-          <div class="contact-info">
-            <div class="info-item">
-              <h4>Location</h4>
-              <p>Nairobi, Kenya</p>
-            </div>
-            <div class="info-item">
-              <h4>Email</h4>
-              <p>hello@aromabliss.com</p>
-            </div>
-            <div class="info-item">
-              <h4>Phone</h4>
-              <p>+254 712 345 678</p>
             </div>
           </div>
         </div>
@@ -326,11 +188,10 @@
           <div class="footer-links">
             <h4>Quick Links</h4>
             <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#best-sellers">Best Sellers</a></li>
-              <li><a href="#products">Products</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
           <div class="footer-newsletter">
@@ -387,8 +248,6 @@
       <div class="toast-content"></div>
     </div>
 
-    <!-- Add the Lovable script tag for enabling new features -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script src="script.js"></script>
   </body>
 </html>

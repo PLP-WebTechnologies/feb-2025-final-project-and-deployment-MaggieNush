@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Aroma Bliss</title>
+    <meta
+      name="description"
+      content="Learn about our story, values, and the team behind Aroma Bliss handcrafted candles."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Quicksand:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <h1 class="logo">Aroma Bliss</h1>
+        <nav class="nav">
+          <button class="mobile-menu-btn" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="products.html" class="nav-link">Products</a></li>
+            <li><a href="about.html" class="nav-link active">About</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="cart-icon" aria-label="View cart">
+          <span class="cart-count">0</span>
+          🛒
+        </div>
+      </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>Meet the team behind your favorite candles</p>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2 class="section-title">Our Story</h2>
+            <p>
+              Aroma Bliss was founded in Nairobi with a simple mission — to
+              bring a warm, fragrant experience into every Kenyan home. We
+              believe in sustainability, beauty, and calm moments.
+            </p>
+
+            <h3>Our Values</h3>
+            <ul class="values-list">
+              <li>
+                <span>Sustainability</span> - Using 100% natural soy wax and
+                eco-friendly materials
+              </li>
+              <li>
+                <span>Craftsmanship</span> - Each candle handcrafted with
+                attention to detail
+              </li>
+              <li>
+                <span>Community</span> - Supporting local artisans and
+                businesses
+              </li>
+            </ul>
+          </div>
+          <div class="about-image">
+            <img
+              src="https://i.pinimg.com/736x/11/45/15/1145158b2d78ba941f502a3a89f087a4.jpg"
+              alt="Candle making process"
+              class="rounded-image"
+            />
+          </div>
+        </div>
+
+        <div class="team">
+          <h3>Meet Our Team</h3>
+          <div class="team-members">
+            <div class="team-member">
+              <div class="team-member-image">
+                <img
+                  src="https://img.freepik.com/free-photo/african-american-business-woman_1303-10877.jpg?uid=R26512534&semt=ais_hybrid&w=740"
+                  alt="Wanjiru Mwangi"
+                />
+              </div>
+              <h4>Wanjiru Mwangi</h4>
+              <p>Founder & Creative Lead</p>
+            </div>
+            <div class="team-member">
+              <div class="team-member-image">
+                <img
+                  src="https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072214.jpg?uid=R26512534&semt=ais_hybrid&w=740"
+                  alt="Brian Otieno"
+                />
+              </div>
+              <h4>Brian Otieno</h4>
+              <p>Operations Manager</p>
+            </div>
+            <div class="team-member">
+              <div class="team-member-image">
+                <img
+                  src="https://img.freepik.com/free-photo/medium-shot-girl-posing-skate_23-2148499566.jpg?uid=R26512534&semt=ais_hybrid&w=740"
+                  alt="Nafula Achieng"
+                />
+              </div>
+              <h4>Nafula Achieng</h4>
+              <p>Lead Scent Designer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h3>Aroma Bliss</h3>
+            <p>Handcrafted in Kenya with care</p>
+          </div>
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-newsletter">
+            <h4>Stay Updated</h4>
+            <form id="newsletter-form">
+              <input type="email" placeholder="Your email address" required />
+              <button type="submit" class="btn btn-small">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2025 Aroma Bliss. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar">
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button class="close-cart">&times;</button>
+      </div>
+      <div class="cart-items">
+        <!-- Cart items will be dynamically inserted here -->
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <p>Total: <span id="cart-total">KSh 0</span></p>
+        </div>
+        <button class="btn btn-primary checkout-btn">Checkout</button>
+        <button class="btn btn-secondary clear-cart-btn">Clear Cart</button>
+      </div>
+    </div>
+
+    <!-- Overlay for Cart and Lightbox -->
+    <div class="overlay"></div>
+
+    <!-- Success Toast -->
+    <div class="toast" id="toast">
+      <div class="toast-content"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
