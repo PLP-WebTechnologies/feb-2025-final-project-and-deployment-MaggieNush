@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aroma Bliss | Handcrafted Kenyan Candles</title>
+    <meta
+      name="description"
+      content="Discover handcrafted soy candles infused with love, comfort, and the essence of Kenya at Aroma Bliss."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Quicksand:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <h1 class="logo">Aroma Bliss</h1>
+        <nav class="nav">
+          <button class="mobile-menu-btn" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav-list">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#best-sellers" class="nav-link">Best Sellers</a></li>
+            <li><a href="#products" class="nav-link">Products</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="cart-icon" aria-label="View cart">
+          <span class="cart-count">0</span>
+          🛒
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h2 class="fade-in">Welcome to Aroma Bliss</h2>
+          <p class="fade-in delay-1">
+            Discover handcrafted soy candles infused with love, comfort, and the
+            essence of Kenya.
+          </p>
+          <a href="#products" class="btn btn-primary fade-in delay-2"
+            >Explore Our Products</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Best Sellers Section -->
+    <section id="best-sellers" class="section best-sellers">
+      <div class="container">
+        <h2 class="section-title">Best Sellers</h2>
+        <p class="section-subtitle">
+          Our customers' favorites, handpicked just for you
+        </p>
+
+        <div class="best-sellers-grid">
+          <!-- Best Seller 1 -->
+          <div class="best-seller-card">
+            <div class="card-ribbon">Most Popular</div>
+            <div class="best-seller-image">
+              <img
+                src="https://i.pinimg.com/736x/06/d7/89/06d789cc47c3807dbd36c962d9849194.jpg"
+                alt="Lavender Bliss Candle"
+              />
+            </div>
+            <div class="best-seller-content">
+              <h3>Lavender Bliss Candle</h3>
+              <p class="best-seller-description">
+                Soothe your senses with the calming aroma of fresh lavender
+                fields that brings peace to any room.
+              </p>
+              <p class="best-seller-price">KSh 1200</p>
+              <div class="best-seller-actions">
+                <button
+                  class="btn btn-primary add-to-cart"
+                  data-id="lavender-bliss"
+                >
+                  Add Cart
+                </button>
+                <button
+                  class="btn btn-secondary view-product"
+                  data-id="lavender-bliss"
+                >
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Best Seller 2 -->
+          <div class="best-seller-card">
+            <div class="card-ribbon">Top Rated</div>
+            <div class="best-seller-image">
+              <img
+                src="https://i.pinimg.com/736x/1c/d2/8c/1cd28cda6009fd069700b8280bfd60e3.jpg"
+                alt="Rose Serenity Candle"
+              />
+            </div>
+            <div class="best-seller-content">
+              <h3>Rose Serenity Candle</h3>
+              <p class="best-seller-description">
+                Envelop yourself in the romantic scent of garden roses for a
+                touch of elegance and warmth.
+              </p>
+              <p class="best-seller-price">KSh 1500</p>
+              <div class="best-seller-actions">
+                <button
+                  class="btn btn-primary add-to-cart"
+                  data-id="rose-serenity"
+                >
+                  Add Cart
+                </button>
+                <button
+                  class="btn btn-secondary view-product"
+                  data-id="rose-serenity"
+                >
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Best Seller 3 -->
+          <div class="best-seller-card">
+            <div class="card-ribbon">New Release</div>
+            <div class="best-seller-image">
+              <img
+                src="https://i.pinimg.com/736x/7b/05/7f/7b057f77ac45c45bda959d1a349927f0.jpg"
+                alt="Eucalyptus Calm Candle"
+              />
+            </div>
+            <div class="best-seller-content">
+              <h3>Eucalyptus Calm Candle</h3>
+              <p class="best-seller-description">
+                Refresh your space with the crisp, clean aroma of eucalyptus
+                that clears the mind and invigorates the senses.
+              </p>
+              <p class="best-seller-price">KSh 1000</p>
+              <div class="best-seller-actions">
+                <button
+                  class="btn btn-primary add-to-cart"
+                  data-id="eucalyptus-calm"
+                >
+                  Add Cart
+                </button>
+                <button
+                  class="btn btn-secondary view-product"
+                  data-id="eucalyptus-calm"
+                >
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section products">
+      <div class="container">
+        <h2 class="section-title">Our Products</h2>
+
+        <!-- Filter Controls -->
+        <div class="filter-controls">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="lavender">Lavender</button>
+          <button class="filter-btn" data-filter="rose">Rose</button>
+          <button class="filter-btn" data-filter="eucalyptus">
+            Eucalyptus
+          </button>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="product-grid">
+          <!-- Products will be dynamically inserted here by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2 class="section-title">About Us</h2>
+            <p>
+              Aroma Bliss was founded in Nairobi with a simple mission — to
+              bring a warm, fragrant experience into every Kenyan home. We
+              believe in sustainability, beauty, and calm moments.
+            </p>
+
+            <h3>Our Values</h3>
+            <ul class="values-list">
+              <li>
+                <span>Sustainability</span> - Using 100% natural soy wax and
+                eco-friendly materials
+              </li>
+              <li>
+                <span>Craftsmanship</span> - Each candle handcrafted with
+                attention to detail
+              </li>
+              <li>
+                <span>Community</span> - Supporting local artisans and
+                businesses
+              </li>
+            </ul>
+          </div>
+          <div class="about-image">
+            <img
+              src="https://i.pinimg.com/736x/11/45/15/1145158b2d78ba941f502a3a89f087a4.jpg"
+              alt="Candle making process"
+              class="rounded-image"
+            />
+          </div>
+        </div>
+
+        <div class="team">
+          <h3>Meet Our Team</h3>
+          <div class="team-members">
+            <div class="team-member">
+              <div class="team-member-image">
+                <img
+                  src="https://img.freepik.com/free-photo/african-american-business-woman_1303-10877.jpg?uid=R26512534&semt=ais_hybrid&w=740"
+                  alt="Wanjiru Mwangi"
+                />
+              </div>
+              <h4>Wanjiru Mwangi</h4>
+              <p>Founder & Creative Lead</p>
+            </div>
+            <div class="team-member">
+              <div class="team-member-image">
+                <img
+                  src="https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072214.jpg?uid=R26512534&semt=ais_hybrid&w=740"
+                  alt="Brian Otieno"
+                />
+              </div>
+              <h4>Brian Otieno</h4>
+              <p>Operations Manager</p>
+            </div>
+            <div class="team-member">
+              <div class="team-member-image">
+                <img
+                  src="https://img.freepik.com/free-photo/medium-shot-girl-posing-skate_23-2148499566.jpg?uid=R26512534&semt=ais_hybrid&w=740"
+                  alt="Nafula Achieng"
+                />
+              </div>
+              <h4>Nafula Achieng</h4>
+              <p>Lead Scent Designer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 class="section-title">Contact Us</h2>
+        <p class="contact-intro">
+          We'd love to hear from you! Whether it's a custom scent request or a
+          wholesale inquiry, our team is here to help.
+        </p>
+
+        <div class="contact-container">
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+
+          <div class="contact-info">
+            <div class="info-item">
+              <h4>Location</h4>
+              <p>Nairobi, Kenya</p>
+            </div>
+            <div class="info-item">
+              <h4>Email</h4>
+              <p>hello@aromabliss.com</p>
+            </div>
+            <div class="info-item">
+              <h4>Phone</h4>
+              <p>+254 712 345 678</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h3>Aroma Bliss</h3>
+            <p>Handcrafted in Kenya with care</p>
+          </div>
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#best-sellers">Best Sellers</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-newsletter">
+            <h4>Stay Updated</h4>
+            <form id="newsletter-form">
+              <input type="email" placeholder="Your email address" required />
+              <button type="submit" class="btn btn-small">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2025 Aroma Bliss. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar">
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button class="close-cart">&times;</button>
+      </div>
+      <div class="cart-items">
+        <!-- Cart items will be dynamically inserted here -->
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <p>Total: <span id="cart-total">KSh 0</span></p>
+        </div>
+        <button class="btn btn-primary checkout-btn">Checkout</button>
+        <button class="btn btn-secondary clear-cart-btn">Clear Cart</button>
+      </div>
+    </div>
+
+    <!-- Overlay for Cart and Lightbox -->
+    <div class="overlay"></div>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox">
+      <button class="close-lightbox">&times;</button>
+      <img src="" alt="Product image" id="lightbox-image" />
+      <div class="lightbox-details">
+        <h3 id="lightbox-title"></h3>
+        <p id="lightbox-description"></p>
+        <p class="lightbox-price"></p>
+        <button class="btn btn-primary add-to-cart-lightbox" data-id="">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+
+    <!-- Success Toast -->
+    <div class="toast" id="toast">
+      <div class="toast-content"></div>
+    </div>
+
+    <!-- Add the Lovable script tag for enabling new features -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
